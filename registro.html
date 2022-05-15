@@ -1,0 +1,55 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMC</title>
+    <link rel="Icon" href="assets/images/logoSMCSinFondo.png" type="image/png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/estilosAdrian.css">
+    <link rel="stylesheet" href="assets/css/fontello.css">
+</head>
+<body>
+
+  <form action="controllers/subir_archivo.php" method="POST" enctype="multipart/form-data">
+  
+    <h1><span class="number">1</span>Registro inicial</h1>
+
+    <fieldset>
+    </span>Favor de llenar los siguientes datos, recuerda que en caso de aprobar tu asistencia, el código solo será válido en las próximas 24 horas 
+    <br><br>
+      <label>1. ¿Has sido informado sobre los protocolos y requerimientos para que sea posible tu asistencia?:</label>
+      <input type="radio" id="siR" value="Si" name="asistencia"><label for="siR" class="light">Si</label><br>
+      <input type="radio" id="noR" value="No" name="asistencia"><label for="noR" class="light">No</label>
+      <br><br>
+      <label>2. Sube aquí tu carta compromiso:</label>
+      <input type="file" id="carta" name="carta" accept="application/pdf"><br><br>
+      <label>3. Sube aquí tu certificado de vacunación contra la COVID-19:</label>
+      <input type="file" id="certificado" name="certificado" accept="application/pdf">
+    </fieldset>
+    <button class='botonForm' type="submit">Enviar respuestas</button>
+  </form>
+  <footer>
+    <div class="contenedor1">
+    <h2>Desarrollado por:</h2>
+    <label>Mario Coyoy Lopez</label>
+    <label>Adrian Perez Facundo</label>
+    <label>Omar Alejandro Perez Reyes</label>
+    <label>Nuria Yaretzi Rivera Zamarrón</label>
+    <label>Juan Daniel Torres Colorado</label></div>
+    <div class="contenedor2">
+      <h2>Nuestras redes sociales:</h2>
+      <a class="icon-facebook-squared" href="https://www.facebook.com/UPVTam">Facebook</a>
+      <a class="icon-twitter" href="https://twitter.com/upvictoria">Twitter</a>
+      <a class="icon-youtube-play" href="https://www.youtube.com/user/miupv">Youtube</a>
+      <a class="icon-globe" href="http://www.upvictoria.edu.mx/">Sitio UPV</a>
+    </div>
+    <div class="contenedor3">
+      <h2>Contacto y dirección:</h2>
+      <label >+52 834 171 1100</label>
+      <label >Av. Nuevas Tecnologías 5902,</label>
+      <label>Parque Científico</label> 
+      <label>Tecnológico de Tamaulipas,</label>
+      <label> 87138 Cd Victoria, Tamps.</label></div>
+  </footer>
+</body>
+</html>

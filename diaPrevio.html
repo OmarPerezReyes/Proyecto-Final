@@ -1,0 +1,89 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMC</title>
+    <link rel="Icon" href="assets/images/logoSMCSinFondo.png" type="image/png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/estilosAdrian.css">
+    <link rel="stylesheet" href="assets/css/fontello.css">
+</head>
+<body>
+
+  <form action="controllers/diaPrevio_be.php" method="post">
+  
+    <h1><span class="number">2</span>Día previo a asistir</h1>
+    
+    <fieldset>
+    </span>Favor de llenar los siguientes datos, recuerda que en caso de aprobar tu asistencia, el código solo será válido en las próximas 24 horas 
+    <br><br><label>1. ¿Tienes fiebre/temperatura?:</label>
+      <input type="radio" id="siFT" value="Si" name="1" required><label for="siFT" class="light" requerid>Si</label><br>
+      <input type="radio" id="noFT" value="No" name="1" required><label for="noFT" class="light">No</label>
+      <br><br>
+      <label>2. ¿Tienes tos?:</label>
+      <input type="radio" id="siT" value="Si" name="2" required><label for="siT" class="light">Si</label><br>
+      <input type="radio" id="noT" value="No" name="2" required><label for="noT" class="light">No</label>
+      <br><br>
+      <label>3. ¿Te duele la cabeza?:</label>
+      <input type="radio" id="siC" value="Si" name="3" required><label for="siC" class="light">Si</label><br>
+      <input type="radio" id="noC" value="No" name="3" required><label for="noC" class="light">No</label>
+      <br><br>
+      <label>4. Durantes los recientes días, has tenido alguno de los siguientes síntomas:</label>
+      <input type="checkbox" id="fiebre" value="fiebre" name="sintomas[]"><label for="fiebre" class="light">Fiebre</label><br>
+      <input type="checkbox" id="tosSeca" value="tosSeca" name="sintomas[]"><label for="tosSeca" class="light">Tos Seca</label><br>
+      <input type="checkbox" id="cansancio" value="cansancio" name="sintomas[]"><label for="cansancio" class="light">Cansancio</label><br>
+      <input type="checkbox" id="gustoOl" value="gustoOl" name="sintomas[]"><label for="gustoOl" class="light">Perdida del gusto o el olfato</label><br>
+      <input type="checkbox" id="dolorG" value="dolorG" name="sintomas[]"><label for="dolorG" class="light">Dolor de garganta</label><br>
+      <input type="checkbox" id="dolorC" value="dolorC" name="sintomas[]"><label for="dolorC" class="light">Dolor de cabeza</label><br>
+      <input type="checkbox" id="molestiasD" value="molestiasD" name="sintomas[]"><label for="molestiasD" class="light">Molestias y dolores</label><br>
+      <input type="checkbox" id="diarrea" value="diarrea" name="sintomas[]"><label for="diarrea" class="light">Diarrea</label><br>
+      <input type="checkbox" id="erupcion" value="erupcion" name="sintomas[]"><label for="erupcion" class="light">Erupción cutánea o pérdida del color de los dedos de las manos o los pies</label><br>
+      <input type="checkbox" id="ojosR" value="ojosR" name="sintomas[]"><label for="ojosR" class="light">Ojos rojos o irritados</label><br>
+      <input type="checkbox" id="disnea" value="disnea" name="sintomas[]"><label for="disnea" class="light">Dificultad para respirar o disnea</label><br>
+      <input type="checkbox" id="perdidaM" value="perdidaM" name="sintomas[]"><label for="perdidaM" class="light">Pérdida de movilidad o del habla o sensación de confusión</label><br>
+      <input type="checkbox" id="dolorP" value="dolorP" name="sintomas[]"><label for="dolorP" class="light">Dolor en el pecho</label><br>
+      <input type="checkbox" id="ninguno" value="ninguno" name="sintomas[]"><label for="ninguno" class="light">Ninguno de los anteriores</label><br>
+      <br>
+      <label>5. ¿Con qué frecuencia sales de casa para ir a lugares públicos?</label>
+      <input type="radio" id="1-2" value="1-2" name="5" required><label for="1-2" class="light">1-2 veces a la semana</label><br>
+      <input type="radio" id="3-4" value="3-4" name="5" required><label for="3-4" class="light">3-4 veces a la semana</label><br>
+      <input type="radio" id="5" value="5" name="5"><label for="5" class="light">5 o mas veces a la semana</label><br>
+      <br>
+      <label>6. ¿Con qué frecuencia visitas a conocidos, amigos o familia?</label>
+      <input type="radio" id="1-2" value="1-2" name="6" required><label for="1-2" class="light">1-2 veces a la semana</label><br>
+      <input type="radio" id="3-4" value="3-4" name="6" required><label for="3-4" class="light">3-4 veces a la semana</label><br>
+      <input type="radio" id="5" value="5" name="6"><label for="5" class="light">5 o mas veces a la semana</label><br>
+      <br>
+      <label>7. Como parte de tu autocuidado, debes llevar los siguientes productos::</label>
+      <input type="checkbox" id="gel" value="gel" name="productos[]"><label for="gel" class="light">Gel Antibacterial</label><br>
+      <input type="checkbox" id="cubrebocas" value="cubrebocas" name="productos[]"><label for="cubrebocas" class="light">Cubrebocas Extra</label><br>
+      <input type="checkbox" id="spray" value="spray" name="productos[]"><label for="spray" class="light">Spray o toallitas desinfectantes</label><br>
+      <input type="checkbox" id="ninguno" value="ninguno" name="productos[]"><label for="spray" class="light">Ninguno de los anteriores</label><br>
+    </fieldset>
+    <button class='botonForm' type="submit">Enviar respuestas</button>
+  </form>
+  <footer>
+    <div class="contenedor1">
+    <h2>Desarrollado por:</h2>
+    <label>Mario Coyoy Lopez</label>
+    <label>Adrian Perez Facundo</label>
+    <label>Omar Alejandro Perez Reyes</label>
+    <label>Nuria Yaretzi Rivera Zamarrón</label>
+    <label>Juan Daniel Torres Colorado</label></div>
+    <div class="contenedor2">
+      <h2>Nuestras redes sociales:</h2>
+      <a class="icon-facebook-squared" href="https://www.facebook.com/UPVTam">Facebook</a>
+      <a class="icon-twitter" href="https://twitter.com/upvictoria">Twitter</a>
+      <a class="icon-youtube-play" href="https://www.youtube.com/user/miupv">Youtube</a>
+      <a class="icon-globe" href="http://www.upvictoria.edu.mx/">Sitio UPV</a></div>
+
+      <div class="contenedor3">
+      <h2>Contacto y dirección:</h2>
+      <label >+52 834 171 1100</label>
+      <label >Av. Nuevas Tecnologías 5902,</label>
+      <label>Parque Científico</label> 
+      <label>Tecnológico de Tamaulipas,</label>
+      <label> 87138 Cd Victoria, Tamps.</label></div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,29 @@
+
+body{
+    background-image: url(../images/fondoPrincipal.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+video {
+    width: 40%;
+    margin-top: 12%;
+    margin-left: 12%;
+  }
+
+div{
+    text-align: left;
+}
+
+@media (min-width: 768px) and (max-width: 1024px){    
+video {
+    width: 60%;
+    height: 40%;
+    margin-top: 22%;
+    margin-left: 20%;
+    position: fixed;
+  }
+
+}    
